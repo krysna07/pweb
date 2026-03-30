@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -33,11 +33,12 @@ export default function Home() {
         >
           <div className="flex flex-col items-center text-center gap-6 max-w-xl">
             {/* Profile Image */}
-            <div className="w-40 h-56 rounded-2x1 overflow-hidden border-4 border-blue-500 shadow-lg bg-gray-700">
-              <img
-                src="/Foto Profil.jpeg"
+            <div className="relative w-40 h-56 rounded-2xl overflow-hidden border-4 border-blue-500 shadow-lg bg-gray-700">
+              <Image
+                src="/Foto%20Profil.jpeg"
                 alt="my photo"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
 
